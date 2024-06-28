@@ -11,24 +11,24 @@ const AdminPage = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await axios.get('/api/products');
+      const response = await axios.get('http://localhost:5000/api/products'); 
       setProducts(response.data);
     };
     fetchProducts();
   }, []);
 
   const handleAddProduct = async (product) => {
-    const response = await axios.post('/api/products', product);
+    const response = await axios.post('http://localhost:5000/api/products', product); 
     setProducts([...products, response.data]);
   };
 
   const handleDeleteProduct = async (productId) => {
-    await axios.delete(`/api/products/${productId}`);
+    await axios.delete(`http://localhost:5000/api/products/${productId}`); 
     setProducts(products.filter(product => product._id !== productId));
   };
 
   return (
-    <div>
+    <div className="admin-page">
       <h1>Admin Page</h1>
       <ProductForm onAddProduct={handleAddProduct} />
       <ul>

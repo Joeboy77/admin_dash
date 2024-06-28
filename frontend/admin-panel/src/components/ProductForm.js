@@ -16,7 +16,7 @@ const ProductForm = ({ onAddProduct }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='product-form'>
       <input type="text" name="name" placeholder="Name" value={product.name} onChange={handleChange} required />
       <input type="number" name="price" placeholder="Price" value={product.price} onChange={handleChange} required />
       <input type="text" name="description" placeholder="Description" value={product.description} onChange={handleChange} required />

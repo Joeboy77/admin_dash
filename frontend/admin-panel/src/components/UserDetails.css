@@ -1,0 +1,11 @@
+.user-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-details p {
+    margin: 5px 0;
+  }
+  

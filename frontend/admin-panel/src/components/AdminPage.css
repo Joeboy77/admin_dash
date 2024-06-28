@@ -1,0 +1,40 @@
+.admin-page {
+    padding: 20px;
+  }
+  
+  .admin-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-page li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin-page button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .admin-page button:hover {
+    background-color: #c82333;
+  }
+  
+  .admin-page input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
